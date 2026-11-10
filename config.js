@@ -468,10 +468,6 @@ window.SAATH = {
         hi: "भाटिया एवं कपूर परिवार"
       }
     ];
-    d.signoff = {
-      en: "With Best Compliments From The Bhatia Family\nDayal Gateway, Lucknow",
-      hi: "सप्रेम, भाटिया परिवार\nदयाल गेटवे, लखनऊ"
-    };
   } else if (variant === "nri") {
     d.music = "./assets/audio/christina-perri.mp3";
     d.family.blessings = [
