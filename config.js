@@ -301,45 +301,45 @@ window.SAATH = {
     // --- PHOTO GALLERY CAROUSEL ---
     photos: [
       {
-        src: "./assets/photos/photo-1.webp",
+        src: "./assets/photos/photo-1.jpg",
         caption: {
-          en: "Our first portrait together",
-          hi: "हमारी पहली साथ वाली तस्वीर"
+          en: "Golden hour in the city of Nawabs",
+          hi: "लखनऊ की सुनहरी शाम"
         }
       },
       {
-        src: "./assets/photos/photo-2.webp",
+        src: "./assets/photos/photo-2.jpg",
         caption: {
-          en: "Cherished moments in the garden",
-          hi: "बाग़ में बिताए सुनहरे पल"
+          en: "Dancing under the Clock Tower",
+          hi: "घंटाघर के साए में"
         }
       },
       {
-        src: "./assets/photos/photo-3.webp",
+        src: "./assets/photos/photo-3.jpg",
         caption: {
-          en: "Joyful laughter and endless stories",
-          hi: "मुस्कुराते पल और ढेरों बातें"
+          en: "The look that says forever",
+          hi: "मुस्कुराहटें और नटखट लम्हे"
         }
       },
       {
-        src: "./assets/photos/photo-4.webp",
+        src: "./assets/photos/photo-4.jpg",
         caption: {
-          en: "Under the bougainvillea blossoms",
-          hi: "फूलों की छाँव तले"
+          en: "Late night drives & endless conversations",
+          hi: "सफ़र के साथी"
         }
       },
       {
-        src: "./assets/photos/photo-5.webp",
+        src: "./assets/photos/photo-5.jpg",
         caption: {
-          en: "A portrait for the family album",
-          hi: "पारिवारिक एल्बम के लिए"
+          en: "Rooted in tradition, bound by love",
+          hi: "शाही अंदाज़, सदाबहार प्यार"
         }
       },
       {
-        src: "./assets/photos/photo-6.webp",
+        src: "./assets/photos/photo-6.jpg",
         caption: {
-          en: "By the palace fountain",
-          hi: "महल के फ़व्वारे के पास"
+          en: "Wrapped in love and warmth",
+          hi: "एक दूजे के लिए"
         }
       }
     ],
