@@ -181,7 +181,7 @@ window.SAATH = {
         en: "Vibhuti Khand, Gomti Nagar, Lucknow, UP",
         hi: "विभूति खंड, गोमती नगर, लखनऊ, उत्तर प्रदेश"
       },
-      map: "https://www.google.com/maps/search/?api=1&query=Dayal+Gateway+Vibhuti+Khand+Gomti+Nagar+Lucknow"
+      map: "https://maps.app.goo.gl/6eFMiHWrJnuZPjhZ8"
     },
 
     // --- TRAVEL & CONVEYANCE ---
