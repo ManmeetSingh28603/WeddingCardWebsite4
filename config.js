@@ -391,12 +391,12 @@ window.SAATH = {
 
     // --- OUR SONG (Spotify integration or audio) ---
     song: {
-      url: "https://open.spotify.com/track/08kTa3SL9sV6Iy8KLKtGql",
+      url: "https://open.spotify.com/track/6tzckBcK66LzeSA1Opnv35",
       title: {
-        en: "Kasoor",
-        hi: "कसूर"
+        en: "Raabta",
+        hi: "राबता"
       },
-      artist: "Prateek Kuhad"
+      artist: "Arijit Singh, Shreya Ghoshal"
     },
 
     // --- SIGNOFF & ROYAL LOGO ---
@@ -411,3 +411,138 @@ window.SAATH = {
     logoDark: "./assets/logo.png"
   }
 };
+
+// --- DYNAMIC VARIANT APPLICATION (Groom / Bride / NRI) ---
+(() => {
+  const params = new URLSearchParams(typeof location !== "undefined" ? location.search : "");
+  const path = typeof location !== "undefined" ? location.pathname.toLowerCase() : "";
+  const variant = (
+    window.SAATH_VARIANT ||
+    params.get("variant") ||
+    params.get("side") ||
+    (path.includes("bride") ? "bride" : path.includes("nri") ? "nri" : "groom")
+  ).toLowerCase();
+
+  const d = window.SAATH.data;
+
+  if (variant === "bride") {
+    d.music = "./assets/audio/jahaan-acoustic.mp3";
+    d.family.blessings = [
+      {
+        en: "Late Smt. Motia Bhatia & Late Shri Ramesh Chandra Bhatia",
+        hi: "स्व. श्रीमती मोतिया देवी भाटिया एवं स्व. श्री रमेश चंद्र भाटिया"
+      },
+      {
+        en: "Smt. Kanta Sehgal & Late Sri Nand Kishore Sehgal",
+        hi: "श्रीमती कांता सहगल एवं स्व. श्री नंद किशोर सहगल"
+      },
+      {
+        en: "Late Smt. Sarojini Kapoor & Late Shri Vishwa Nath Kapoor",
+        hi: "स्व. श्रीमती सरोजिनी कपूर एवं स्व. श्री विश्वनाथ कपूर"
+      },
+      {
+        en: "Late Smt. Asha Bhalla & Sri Vishwanath Bhalla",
+        hi: "स्व. श्रीमती आशा भल्ला एवं श्री विश्वनाथ भल्ला"
+      }
+    ];
+    d.family.darshanabhilashi = [
+      {
+        en: "The Bhatia Family",
+        hi: "भाटिया परिवार"
+      },
+      {
+        en: "The Kapoor & Bhalla Family",
+        hi: "कपूर एवं भल्ला परिवार"
+      }
+    ];
+    d.family.swagatotsuk = [
+      {
+        en: "Esha & Eshant",
+        hi: "ईशा एवं ईशांत"
+      }
+    ];
+    d.family.kids = [
+      {
+        en: "Bhatia & Kapoor Parivar",
+        hi: "भाटिया एवं कपूर परिवार"
+      }
+    ];
+    d.signoff = {
+      en: "With Best Compliments From The Bhatia Family\nDayal Gateway, Lucknow",
+      hi: "सप्रेम, भाटिया परिवार\nदयाल गेटवे, लखनऊ"
+    };
+  } else if (variant === "nri") {
+    d.music = "./assets/audio/christina-perri.mp3";
+    d.family.blessings = [
+      {
+        en: "Late Smt. Sarojini Kapoor & Late Shri Vishwa Nath Kapoor",
+        hi: "स्व. श्रीमती सरोजिनी कपूर एवं स्व. श्री विश्वनाथ कपूर"
+      },
+      {
+        en: "Late Smt. Motia Bhatia & Late Shri Ramesh Chandra Bhatia",
+        hi: "स्व. श्रीमती मोतिया देवी भाटिया एवं स्व. श्री रमेश चंद्र भाटिया"
+      },
+      {
+        en: "Late Smt. Asha Bhalla & Sri Vishwanath Bhalla",
+        hi: "स्व. श्रीमती आशा भल्ला एवं श्री विश्वनाथ भल्ला"
+      },
+      {
+        en: "Smt. Kanta Sehgal & Late Sri Nand Kishore Sehgal",
+        hi: "श्रीमती कांता सहगल एवं स्व. श्री नंद किशोर सहगल"
+      }
+    ];
+    d.family.darshanabhilashi = [
+      {
+        en: "The Kapoor & Bhalla Family",
+        hi: "कपूर एवं भल्ला परिवार"
+      },
+      {
+        en: "The Bhatia Family",
+        hi: "भाटिया परिवार"
+      }
+    ];
+    d.family.swagatotsuk = [
+      {
+        en: "Saumya & Shivam",
+        hi: "सौम्या एवं शिवम"
+      }
+    ];
+  } else {
+    // Groom (default)
+    d.music = "./assets/audio/jahaan-acoustic.mp3";
+    d.family.blessings = [
+      {
+        en: "Late Smt. Sarojini Kapoor & Late Shri Vishwa Nath Kapoor",
+        hi: "स्व. श्रीमती सरोजिनी कपूर एवं स्व. श्री विश्वनाथ कपूर"
+      },
+      {
+        en: "Late Smt. Motia Bhatia & Late Shri Ramesh Chandra Bhatia",
+        hi: "स्व. श्रीमती मोतिया देवी भाटिया एवं स्व. श्री रमेश चंद्र भाटिया"
+      },
+      {
+        en: "Late Smt. Asha Bhalla & Sri Vishwanath Bhalla",
+        hi: "स्व. श्रीमती आशा भल्ला एवं श्री विश्वनाथ भल्ला"
+      },
+      {
+        en: "Smt. Kanta Sehgal & Late Sri Nand Kishore Sehgal",
+        hi: "श्रीमती कांता सहगल एवं स्व. श्री नंद किशोर सहगल"
+      }
+    ];
+    d.family.darshanabhilashi = [
+      {
+        en: "The Kapoor & Bhalla Family",
+        hi: "कपूर एवं भल्ला परिवार"
+      },
+      {
+        en: "The Bhatia Family",
+        hi: "भाटिया परिवार"
+      }
+    ];
+    d.family.swagatotsuk = [
+      {
+        en: "Saumya & Shivam",
+        hi: "सौम्या एवं शिवम"
+      }
+    ];
+  }
+})();

@@ -543,7 +543,7 @@
     // The couple's own song (kept with their photos), a track from the music library, or the design's
     // own, on a loop. "off": no music and no button.
     if (data.music === "off") $("#soundBtn").style.display = "none";
-    else $("#music").src = /^\/api\/wedding\/media\/[0-9a-f-]{36}$/.test(data.music || "") ? data.music : /^music\/[a-z0-9-]+\.mp3$/.test(data.music || "") ? ROOT + data.music : theme.music ? base + theme.music : `${ROOT}themes/theme.mp3`;
+    else $("#music").src = data.music ? (/^(https?:|\/|\.\/)/.test(data.music) ? data.music : `${ROOT}${data.music}`) : theme.music ? base + theme.music : `${ROOT}themes/theme.mp3`;
     const meta = document.querySelector('meta[name="theme-color"]');
     if (meta) meta.content = p.night || p.paper || "#ebe3d5";
   }
