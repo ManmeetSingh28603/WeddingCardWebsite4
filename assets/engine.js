@@ -1201,7 +1201,7 @@
       ${has(data.venue.address) ? `<p class="venue-addr reveal" lang="${lang}">${esc(pick(data.venue.address))}</p>` : ""}
       ${data.venue.photo ? `<img class="venue-art venue-photo reveal" src="${esc(media(data.venue.photo))}" alt="" loading="lazy" decoding="async" data-clarity-mask="true">`
         : art("venue") ? `<img class="venue-art reveal" src="${art("venue")}" alt="" loading="lazy" decoding="async">` : ""}
-      ${data.venue.map ? `<div class="map reveal" id="mapBox"><button class="map-load" type="button" lang="${lang}">${esc(u.showMap)}</button></div>
+      ${data.venue.map ? `<div class="map reveal loaded" id="mapBox"><iframe title="${esc(t().mapTitle(pick(data.venue.name)))}" src="https://maps.google.com/maps?q=${encodeURIComponent((data.venue.name?.en || pick(data.venue.name)) + ', ' + (data.venue.address?.en || pick(data.venue.address)))}&z=15&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
       <a class="btn" href="${esc(data.venue.map)}" target="_blank" rel="noopener" lang="${lang}">${esc(u.maps)}</a>` : ""}
       ${places.map(({ evs: [e, ...more] }) => { const map = [e, ...more].map(mapOf).find(Boolean); return `<div class="venue-also reveal">
         <p class="caps venue-for" lang="${lang}">${esc(andList([e, ...more].map((x) => pick(x.name))))}</p>

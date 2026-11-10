@@ -102,7 +102,7 @@ window.SAATH = {
         "rickshaw": "rickshaw.webp",
         "camel": "camel.webp"
       },
-      "venue": "venue.webp",
+      "venue": "venue.jpg",
       "dress": "dress.webp"
     }
   },
@@ -183,6 +183,7 @@ window.SAATH = {
         en: "Vibhuti Khand, Gomti Nagar, Lucknow, UP",
         hi: "विभूति खंड, गोमती नगर, लखनऊ, उत्तर प्रदेश"
       },
+      photo: "./assets/venue.jpg",
       map: "https://maps.app.goo.gl/6eFMiHWrJnuZPjhZ8"
     },
 
