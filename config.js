@@ -273,8 +273,8 @@ window.SAATH = {
 
     // --- OUR STORY ---
     story: {
-      en: "Joined in January, matched in February, married in December. Yes, we really don't waste time. 😄\n\nWe found each other on Jeevansathi, and by 2nd February we were already talking non-stop. Three days later, he said yes. Our first date was on Valentine's Day in Gurgaon, with nervous smiles, awkward silences and a lot of \"so... hi.\" Somehow it still felt like we'd known each other forever.",
-      hi: "जनवरी में शुरुआत, फ़रवरी में रिश्ता तय, और दिसंबर में शादी! सच कहें तो हमने बिल्कुल वक़्त ज़ाया नहीं किया। 😄\n\nहम दोनों जीवनसाथी पर मिले, और 2 फ़रवरी तक हमारी बातें कभी ख़त्म ही नहीं होती थीं। बस तीन दिन बाद, उन्होंने 'हाँ' कह दी। 14 फ़रवरी को गुड़गाँव में हमारी पहली मुलाक़ात हुई—शर्मीली मुस्कानें, प्यारी सी चुप्पी और ढेर सारी 'सो... हाय!'। फिर भी ऐसा लगा जैसे हम एक-दूसरे को सदियों से जानते हों।"
+      en: "Joined Jeevansathi in January, matched in February, married in December. Yes, we really don't waste time. 😄\n\nWe found each other on Jeevansathi, and by 2nd February we were already talking non-stop. Three days later, he said yes. Our first date was on Valentine's Day in Gurgaon, with nervous smiles, awkward silences and a lot of \"so... hi.\" Somehow it still felt like we'd known each other forever.",
+      hi: "जनवरी में जीवनसाथी पर शुरुआत, फ़रवरी में रिश्ता तय, और दिसंबर में शादी! सच कहें तो हमने बिल्कुल वक़्त ज़ाया नहीं किया। 😄\n\nहम दोनों जीवनसाथी पर मिले, और 2 फ़रवरी तक हमारी बातें कभी ख़त्म ही नहीं होती थीं। बस तीन दिन बाद, उन्होंने 'हाँ' कह दी। 14 फ़रवरी को गुड़गाँव में हमारी पहली मुलाक़ात हुई—शर्मीली मुस्कानें, प्यारी सी चुप्पी और ढेर सारी 'सो... हाय!'। फिर भी ऐसा लगा जैसे हम एक-दूसरे को सदियों से जानते हों।"
     },
 
     // --- TIMELINE MILESTONES ---

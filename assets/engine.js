@@ -567,17 +567,12 @@
     const r = document.documentElement.style, b = document.body.style;
     r.setProperty("--foil", `linear-gradient(100deg, ${deep} 0%, ${mid} 22%, ${hi} 38%, ${deep} 55%, ${hi} 72%, ${deep} 100%)`);
     // Set on the body so they win over the stylesheet's dark-mode defaults.
+    b.setProperty("--ink", theme.palette?.ink || "#181C38");
     b.setProperty("--gold-deep", ink(gold));
     b.setProperty("--gold-text", ink(gold));
     b.setProperty("--accent-text", ink(accent));
-    // The soft ink (captions, small capitals) is the ink mixed towards the paper: as soft as the
-    // paper allows while still reading at 4.6:1 (on a warm yellow paper, 68% isn't enough).
-    {
-      const ic = rgb(theme.palette?.ink || "#2b1b17"), pc = rgb(paper);
-      let soft = hex(ic);
-      for (let t = 0.32; t >= 0; t -= 0.02) { const c = hex(mix(ic, pc, t)); if (contrast(luminance(c), pL) >= 4.6) { soft = c; break; } }
-      b.setProperty("--ink-soft", soft);
-    }
+    // The soft ink (captions, small capitals) is kept dark and crisp for clear readability.
+    b.setProperty("--ink-soft", theme.palette?.ink || "#242845");
     // A filled band with white text (the "today" banner) needs the accent dark enough for white.
     b.setProperty("--accent-fill", (() => { const a = rgb(accent); for (let t = 0; t <= 1; t += 0.02) { const c = mix(a, [20, 10, 6], t); if (luminance(hex(c)) <= 0.175) return hex(c); } return "#2a1a08"; })());
     // Until the opening's painting loads, the screen shows its top edge's colour above and its bottom edge's below.
