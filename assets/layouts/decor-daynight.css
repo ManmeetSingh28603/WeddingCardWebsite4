@@ -1,0 +1,12 @@
+/* Day and night (Rangeelo): the night copy over each function's painting, and the lane below. */
+.decor-daynight .dn-night { position: absolute; object-fit: contain; border-radius: 6px; opacity: 0; pointer-events: none; will-change: opacity; }
+
+/* The lane: a wedding rickshaw drives right and a camel walks left as the guest scrolls past. */
+.dn-lane { --p: 0.5; position: relative; height: 92px; max-width: 400px; margin: 6px auto 0; overflow: hidden; container-type: inline-size; pointer-events: none; }
+.dn-lane::after { content: ""; position: absolute; left: 4%; right: 4%; bottom: 9px; height: 2px; opacity: 0.45;
+  background: repeating-linear-gradient(90deg, var(--accent) 0 9px, transparent 9px 17px); }
+.dn-lane img { position: absolute; bottom: 10px; left: 0; width: auto; will-change: transform; }
+.dn-rickshaw { height: 74px; transform: translateX(calc((var(--p) * 1.45 - 0.32) * 100cqw)); }
+.dn-camel { height: 66px; opacity: 0.96; transform: translateX(calc((1.02 - var(--p) * 1.25) * 100cqw)); }
+.dn-lane.dn-still .dn-rickshaw { transform: translateX(52cqw); }
+.dn-lane.dn-still .dn-camel { transform: translateX(10cqw); }

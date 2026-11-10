@@ -1,0 +1,212 @@
+{
+  "layout": "keepsake",
+  "decor": "daynight",
+  "id": "rangeelo",
+  "name": "Rangeelo",
+  "line": "A painted pink city where kites fill the sky. One tap and a block-printed cloth unrolls down the haveli wall with your names.",
+  "story": "Rangeelo is how Rajasthan says full of colour. Our invite is painted in the manner of Mewar and Kishangarh miniatures, flat bright gouache with gold outlines, then let loose on a pink city of kites, marigolds, a camel and a rickshaw. Its pages are block-printed cotton in indigo and madder, and every function gets a painted place of its own, by day and by night.",
+  "palette": {
+    "ink": "#1F2547",
+    "paper": "#F6EBD3",
+    "accent": "#B2302A",
+    "accent2": "#E9962B",
+    "gold": "#B8862B",
+    "night": "#1A1D3F"
+  },
+  "fonts": {
+    "script": "Pinyon Script",
+    "serif": "Cormorant Garamond",
+    "deva": "Tiro Devanagari Hindi",
+    "display": "Playfair Display"
+  },
+  "moods": {
+    "haldi": {
+      "accent": "#C9820C",
+      "paper": "#FAEFD2"
+    },
+    "mehendi": {
+      "accent": "#4E7A2E",
+      "paper": "#F0F0DC"
+    },
+    "sangeet": {
+      "accent": "#C2306E",
+      "paper": "#F8E8EA"
+    },
+    "wedding": {
+      "accent": "#B2302A",
+      "paper": "#F7E7D6"
+    },
+    "reception": {
+      "accent": "#2E5E8C",
+      "paper": "#EAEFF0"
+    }
+  },
+  "opening": {
+    "type": "keepsake",
+    "gesture": "cloth",
+    "film": "opening.mp4",
+    "first": "opening-first.webp",
+    "last": "opening-last.webp",
+    "aspect": "9 / 16",
+    "focus": [
+      0.08,
+      0.15,
+      0.92,
+      0.9
+    ],
+    "tap": [
+      0.15,
+      0.2,
+      0.85,
+      0.85
+    ],
+    "from": 0.2,
+    "rate": 1.1,
+    "writeAt": 4.1,
+    "names": {
+      "left": 0.31,
+      "top": 0.46,
+      "right": 0.69,
+      "bottom": 0.79
+    },
+    "tone": "dark",
+    "hint": {
+      "en": "Tap to unroll the invitation",
+      "hi": "निमंत्रण खोलने के लिए छुएँ"
+    },
+    "filmNote": "Made once in Google Flow (experiments/collections/2026-10-31-next-films, runs/flow/generations.json, rangeelo-film-2): a Nano Banana painting of a pink haveli wall with chhatri balconies, kites and a block-printed cloth rolled below the parapet, an edit of it with the cloth hanging flat, and a Veo 3.1 Fast clip between them in which the roll drops level down the wall like a blind. Veo rolled it back up near the end to meet the edited last frame, so the film is cut at 5.4 s, while it rests with the roll at the foot, and the first and last frames are the film's own (film-1 tilted and twisted the roll and added kites). Cropped to the centred 9:16 window clear of Flow's marks.",
+    "edge": {
+      "top": "#fee0a4",
+      "bottom": "#8c8482"
+    }
+  },
+  "art": {
+    "closed": "closed.webp",
+    "hero": "hero.webp",
+    "paper": "paper.webp",
+    "frame": "frame.webp",
+    "divider": "divider.webp",
+    "corner": "corner.webp",
+    "motif": "motif.webp",
+    "frameZone": {
+      "top": 0.13,
+      "bottom": 0.863,
+      "left": 0.149,
+      "right": 0.85
+    },
+    "heroCouple": null,
+    "cardHero": {
+      "file": "closed.webp",
+      "focus": [
+        0.5,
+        0.5
+      ]
+    },
+    "fn": {
+      "haldi": "fn-haldi.webp",
+      "mehendi": "fn-mehendi.webp",
+      "sangeet": "fn-sangeet.webp",
+      "wedding": "fn-wedding.webp",
+      "reception": "fn-reception.webp",
+      "engagement": "fn-engagement.webp"
+    },
+    "layout": {
+      "fn-haldi-night": "fn-haldi-night.webp",
+      "fn-mehendi-night": "fn-mehendi-night.webp",
+      "fn-sangeet-night": "fn-sangeet-night.webp",
+      "fn-wedding-night": "fn-wedding-night.webp",
+      "fn-reception-night": "fn-reception-night.webp",
+      "fn-engagement-night": "fn-engagement-night.webp",
+      "rickshaw": "rickshaw.webp",
+      "camel": "camel.webp"
+    },
+    "venue": "venue.webp",
+    "dress": "dress.webp",
+    "scenes": {
+      "invite": {
+        "file": "scene-invite.webp",
+        "corners": [
+          [
+            0.0544,
+            0.0696
+          ],
+          [
+            0.4116,
+            0.0719
+          ],
+          [
+            0.417,
+            0.8946
+          ],
+          [
+            0.0523,
+            0.8982
+          ]
+        ]
+      },
+      "welcome": {
+        "file": "scene-welcome.webp",
+        "corners": [
+          [
+            0.3026,
+            0.252
+          ],
+          [
+            0.7205,
+            0.2499
+          ],
+          [
+            0.733,
+            0.6454
+          ],
+          [
+            0.2949,
+            0.6467
+          ]
+        ]
+      },
+      "table": {
+        "file": "scene-table.webp",
+        "corners": [
+          [
+            0.1245,
+            0.2987
+          ],
+          [
+            0.2918,
+            0.2951
+          ],
+          [
+            0.2914,
+            0.8058
+          ],
+          [
+            0.1088,
+            0.8085
+          ]
+        ]
+      },
+      "favour": {
+        "file": "scene-favour.webp",
+        "corners": [
+          [
+            0.2811,
+            0.3872
+          ],
+          [
+            0.7509,
+            0.385
+          ],
+          [
+            0.7623,
+            0.6564
+          ],
+          [
+            0.2771,
+            0.6588
+          ]
+        ]
+      }
+    }
+  }
+}
