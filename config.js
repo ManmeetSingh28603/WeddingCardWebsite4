@@ -426,6 +426,7 @@ window.SAATH = {
   const d = window.SAATH.data;
 
   if (variant === "bride") {
+    d.groomFirst = false; // Bride first: Diksha & Shaurya everywhere
     d.music = "./assets/audio/jahaan-acoustic.mp3";
     d.family.blessings = [
       {
