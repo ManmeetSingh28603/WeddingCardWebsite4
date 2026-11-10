@@ -41,6 +41,7 @@ window.SAATH = {
       "film": "opening.mp4",
       "first": "opening-first.webp",
       "last": "opening-last.webp",
+      "emblem": "logo",
       "aspect": "9 / 16",
       "focus": [0.08, 0.15, 0.92, 0.9],
       "tap": [0.15, 0.2, 0.85, 0.85],
@@ -71,6 +72,7 @@ window.SAATH = {
       "divider": "divider.webp",
       "corner": "corner.webp",
       "motif": "motif.webp",
+      "logo": "logo.png",
       "frameZone": {
         "top": 0.13,
         "bottom": 0.863,
@@ -409,9 +411,9 @@ window.SAATH = {
       hi: "सप्रेम, कपूर एवं भल्ला परिवार\n2/637, विराम खंड, गोमती नगर, लखनऊ"
     },
     logo: {
-      family: "seal"
+      family: "custom"
     },
-    logoSrc: "./assets/logo.svg",
-    logoDark: "./assets/logo.svg"
+    logoSrc: "./assets/logo.png",
+    logoDark: "./assets/logo.png"
   }
 };

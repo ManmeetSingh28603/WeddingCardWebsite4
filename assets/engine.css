@@ -339,11 +339,11 @@ body.dark .hw-name { filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.6)); }
 .arch-card::after { content: ""; position: absolute; left: 3px; right: 3px; bottom: 0; height: 6px; background: var(--hi); box-shadow: 0 1.5px 1.2px var(--lo); }
 .arch-in { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 1fr); justify-items: center; padding: calc(var(--archH) * 0.42) 30px 44px; }
 /* The couple's logo heads the formal invitation and signs off the page. */
-.inv-logo { display: block; width: 92px; height: 92px; object-fit: contain; margin: 0 auto 12px; }
+.inv-logo { display: block; width: min(240px, 75%); height: auto; object-fit: contain; margin: 4px auto 14px; filter: drop-shadow(0 4px 12px rgba(184, 134, 43, 0.2)); }
 /* The Story map, whole: its pictures and their captions need room. */
-.inv-logo.whole { width: min(230px, 72%); height: auto; aspect-ratio: 1; }
-.so-logo.whole { width: 210px; height: 210px; }
-.so-logo { display: block; width: 120px; height: 120px; object-fit: contain; margin: 22px auto 0; }
+.inv-logo.whole { width: min(240px, 75%); height: auto; aspect-ratio: auto; max-height: 290px; }
+.so-logo.whole { width: min(220px, 70%); height: auto; aspect-ratio: auto; max-height: 270px; }
+.so-logo { display: block; width: min(220px, 70%); height: auto; object-fit: contain; margin: 22px auto 0; filter: drop-shadow(0 4px 12px rgba(184, 134, 43, 0.2)); }
 .om { margin: 0; font: 400 16px/1.4 var(--deva); color: var(--gold-deep); }
 /* A blessing of several lines, each its own line. In English capitals, smaller and spaced, so the longest fits a phone. */
 .om span { display: block; text-wrap: balance; }
