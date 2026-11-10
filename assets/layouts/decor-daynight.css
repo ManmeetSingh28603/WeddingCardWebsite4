@@ -1,5 +1,5 @@
 /* Day and night (Rangeelo): the night copy over each function's painting, and the lane below. */
-.decor-daynight .dn-night { position: absolute; object-fit: contain; border-radius: 6px; opacity: 0; pointer-events: none; will-change: opacity; }
+.decor-daynight .dn-night { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; border-radius: 6px; opacity: 0; pointer-events: none; will-change: opacity; }
 
 /* The lane: a wedding rickshaw drives right and a camel walks left as the guest scrolls past. */
 .dn-lane { --p: 0.5; position: relative; height: 92px; max-width: 400px; margin: 6px auto 0; overflow: hidden; container-type: inline-size; pointer-events: none; }

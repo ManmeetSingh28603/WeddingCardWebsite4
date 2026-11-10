@@ -26,13 +26,13 @@
       const slot = (img.getAttribute("src") || "").match(/fn-([a-z]+)\.webp/)?.[1];
       const night = slot && url(`fn-${slot}-night`);
       if (!night) continue;
-      const tl = img.closest(".tl");
+      const frame = img.closest(".art-frame") || img.closest(".tl");
       const n = document.createElement("img");
       n.className = "dn-night";
       n.alt = ""; n.decoding = "async"; n.loading = "lazy"; n.src = night;
       n.setAttribute("aria-hidden", "true");
-      tl.appendChild(n);
-      pairs.push({ img, n, tl });
+      frame.appendChild(n);
+      pairs.push({ img, n, frame });
     }
 
     // The lane, at the foot of the functions.
@@ -48,8 +48,13 @@
 
     // Each night copy lies exactly over its day painting: the same box, on any screen.
     const place = () => {
-      for (const { img, n, tl } of pairs) {
+      for (const { img, n, frame } of pairs) {
         if (!img.isConnected) continue;
+        if (frame && frame.classList.contains("art-frame")) {
+          // Exact 1:1 fit inside art-frame container via CSS
+          continue;
+        }
+        const tl = img.closest(".tl");
         const r = img.getBoundingClientRect(), t = tl.getBoundingClientRect();
         Object.assign(n.style, { left: `${r.left - t.left}px`, top: `${r.top - t.top}px`, width: `${r.width}px`, height: `${r.height}px` });
       }
@@ -67,12 +72,13 @@
     const tick = () => {
       raf = 0;
       const H = innerHeight;
-      for (const { img, n } of pairs) {
-        const r = img.getBoundingClientRect();
+      for (const { img, n, frame } of pairs) {
+        const target = frame || img;
+        const r = target.getBoundingClientRect();
         if (r.bottom < -H || r.top > 2 * H) continue;
         const p = ease(clamp01((H * 0.82 - (r.top + r.height / 2)) / (H * 0.5)));
         // The night shows only once the day painting itself has been revealed.
-        const shown = Number(getComputedStyle(img).opacity) || 0;
+        const shown = Number(getComputedStyle(target).opacity) || 0;
         n.style.opacity = (p * shown).toFixed(3);
       }
       if (lane) {

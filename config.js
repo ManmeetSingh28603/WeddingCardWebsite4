@@ -337,13 +337,6 @@ window.SAATH = {
           en: "Rooted in tradition, bound by love",
           hi: "शाही अंदाज़, सदाबहार प्यार"
         }
-      },
-      {
-        src: "./assets/photos/photo-6.jpg",
-        caption: {
-          en: "Wrapped in love and warmth",
-          hi: "एक दूजे के लिए"
-        }
       }
     ],
 
@@ -373,8 +366,8 @@ window.SAATH = {
           hi: "कपूर एवं भल्ला परिवार"
         },
         {
-          en: "The Bhatia & Sehgal Family",
-          hi: "भाटिया एवं सहगल परिवार"
+          en: "The Bhatia Family",
+          hi: "भाटिया परिवार"
         }
       ],
       swagatotsuk: [
@@ -394,7 +387,7 @@ window.SAATH = {
     // --- RSVP SETTINGS ---
     rsvp: true,
     rsvpBy: "2026-11-20",
-    rsvpPhone: "919876543210", // Update with your WhatsApp number for RSVPs
+    rsvpPhone: "917895281962", // Update with your WhatsApp number for RSVPs
 
     // --- OUR SONG (Spotify integration or audio) ---
     song: {

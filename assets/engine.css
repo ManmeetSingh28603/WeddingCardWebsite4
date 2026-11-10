@@ -403,13 +403,14 @@ body.dark .hw-name { filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.6)); }
 .timeline::before { content: ""; position: absolute; left: 50%; top: 8px; bottom: 8px; width: 1px; translate: -50% 0; background: linear-gradient(transparent, var(--gold) 12%, var(--gold) 88%, transparent); }
 .tl { --mood: var(--gold-deep); position: relative; display: grid; grid-template-columns: 1fr 1fr; align-items: center; column-gap: 34px; padding: 18px 0; }
 .tl::after { content: ""; position: absolute; left: 50%; top: 50%; width: 9px; height: 9px; translate: -50% -50%; rotate: 45deg; background: var(--paper); border: 1px solid var(--gold); }
-.tl .art { width: 100%; aspect-ratio: 1; object-fit: contain; border-radius: 6px; }
+.tl .art-frame { position: relative; width: 100%; aspect-ratio: 1; display: block; border-radius: 6px; }
+.tl .art { width: 100%; height: 100%; aspect-ratio: 1; object-fit: contain; border-radius: 6px; display: block; }
 .tl .art.glyph { display: grid; place-items: center; color: var(--gold); }
 .tl .art.glyph .orn { width: 70%; }
 .tl .txt { display: grid; gap: 1px; }
-.tl:nth-child(odd) .art { order: 0; }
+.tl:nth-child(odd) :is(.art, .art-frame) { order: 0; }
 .tl:nth-child(odd) .txt { order: 1; text-align: left; justify-items: start; }
-.tl:nth-child(even) .art { order: 1; }
+.tl:nth-child(even) :is(.art, .art-frame) { order: 1; }
 .tl:nth-child(even) .txt { order: 0; text-align: right; justify-items: end; }
 .tl .caps { font-size: 11.5px; letter-spacing: 0.22em; }
 .tl .time { font: 400 34px/1.1 var(--script); color: var(--mood); }

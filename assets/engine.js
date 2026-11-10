@@ -1157,7 +1157,7 @@
           // address in the venue section below: given twice, it crowded the list (Surabhi, 5 November
           // 2026). Only a place left unnamed keeps its address here. walk.js's sheet does the same.
           return `<article class="tl"${mood ? ` style="--mood:${esc(mood)}"` : ""}>
-            ${img ? `<img class="art reveal" src="${img}" alt="" loading="lazy" decoding="async">` : `<span class="art glyph reveal" aria-hidden="true">${ORN}</span>`}
+            ${img ? `<div class="art-frame reveal"><img class="art" src="${img}" alt="" loading="lazy" decoding="async"></div>` : `<span class="art glyph reveal" aria-hidden="true">${ORN}</span>`}
             <div class="txt reveal">
               <span class="caps" lang="${lang}">${esc(fmt(e.start, { weekday: "short", day: "numeric", month: "short" }))}</span>
               <span class="time" lang="${lang}">${esc(clock(e.start))}</span>
