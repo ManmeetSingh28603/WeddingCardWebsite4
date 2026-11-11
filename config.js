@@ -184,7 +184,7 @@ window.SAATH = {
         hi: "विभूति खंड, गोमती नगर, लखनऊ, उत्तर प्रदेश"
       },
       photo: "./assets/venue.jpg",
-      map: "https://maps.app.goo.gl/6eFMiHWrJnuZPjhZ8"
+      map: "https://www.google.com/maps/place/Dayal+Gateway/@26.8600646,81.0070905,17z/data=!3m1!4b1!4m9!3m8!1s0x399be31cbe19478b:0x4d708490a0777488!5m2!4m1!1i2!8m2!3d26.8600598!4d81.0096654!16s%2Fg%2F11qpzq273z?entry=ttu&g_ep=EgoyMDI2MTEwOC4wIKXMDSoASAFQAw%3D%3D"
     },
 
     // --- TRAVEL & CONVEYANCE ---

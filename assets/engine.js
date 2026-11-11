@@ -1403,10 +1403,10 @@
 
   // The map is Google's and the song player is YouTube's or Spotify's: both load only on a tap.
   function loadMap() {
-    let q = `${data.venue.name?.en || ""}, ${data.city?.en || ""}`;
+    let q = `${data.venue.name?.en || ""}, ${data.venue.address?.en || data.city?.en || ""}`;
     try { q = new URL(data.venue.map).searchParams.get("query") || q; } catch {}
     $("#mapBox").classList.add("loaded");
-    $("#mapBox").innerHTML = `<iframe title="${esc(t().mapTitle(pick(data.venue.name)))}" src="https://maps.google.com/maps?q=${encodeURIComponent(q)}&z=14&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`;
+    $("#mapBox").innerHTML = `<iframe title="${esc(t().mapTitle(pick(data.venue.name)))}" src="https://maps.google.com/maps?q=${encodeURIComponent(q)}&z=15&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`;
   }
   function loadSong() {
     const url = data.song.url;

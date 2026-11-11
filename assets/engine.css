@@ -412,7 +412,8 @@ body.dark .hw-name { filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.6)); }
 .tl:nth-child(odd) .txt { order: 1; text-align: left; justify-items: start; }
 .tl:nth-child(even) :is(.art, .art-frame) { order: 1; }
 .tl:nth-child(even) .txt { order: 0; text-align: right; justify-items: end; }
-.tl .caps { font-size: 14px; font-weight: 600; letter-spacing: 0.18em; color: var(--ink); }
+.tl .caps { font-size: 17.5px; font-weight: 700; letter-spacing: 0.16em; color: #080b21; }
+.tl .caps:lang(hi) { font: 600 17.5px/1.4 var(--deva); letter-spacing: 0; color: #080b21; }
 .tl .time { font: 500 36px/1.1 var(--script); color: var(--mood); }
 .tl .caps + .time { margin-top: 5px; }
 .tl .time:lang(hi) { font: 500 22px/1.4 var(--deva); }
